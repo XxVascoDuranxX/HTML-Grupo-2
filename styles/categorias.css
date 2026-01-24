@@ -1,11 +1,13 @@
 :root {
     --font-family: 'Barlow', sans-serif;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Barlow', sans-serif;
     background-color: #171717;
@@ -17,6 +19,57 @@ main {
     max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.div-imagen-texto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 40px;
+    gap: 40px;
+}
+
+.div-flex {
+    flex: 1;
+    max-width: 50%;
+}
+
+.texto-h1 {
+    margin: 60px;
+    font-size: 3em;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.texto-h1-2 {
+    margin: 60px;
+    font-size: 3em;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.texto-intro {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.imagen-moto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
 }
 
 .img-header-mgp{
@@ -73,7 +126,7 @@ a {
 }
 
 .body-div h2 {
-    color: #bc0000;
+    color: #4e00bc;
     margin-bottom: 20px;
 }
 
@@ -82,6 +135,7 @@ a {
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .texto-centrado-grande{
@@ -107,6 +161,10 @@ a {
     transition: transform 0.3s;
     border: 1px solid #c20000;
     display: block;
+    
+}
+
+.card h2 {
     text-align: center;
 }
 
@@ -194,12 +252,13 @@ a {
     color: #cc0000;
 }
 
-
 .social-link {
     color: #ffffff;
     box-sizing: border-box;
     margin-right: 10px;
     padding: 0;
+    width: 32px;
+    height: 32px;
 }
 
 .h5-footer{
@@ -217,6 +276,16 @@ a {
 }
 
 @media (max-width: 768px) {
+
+    .div-imagen-texto {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px; 
+    }
+
+    .div-flex {
+        max-width: 100%;
+    }
 
     .nav {
         display: flex;
@@ -253,8 +322,8 @@ a {
     }
 
     .CajaRoja {
-    background-image: linear-gradient(to bottom, #c90000, #FB3200);
-    flex-direction: column;
+        background-image: linear-gradient(to bottom, #c90000, #FB3200);
+        flex-direction: column;
     }
 
     .CajaRoja div {
