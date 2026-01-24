@@ -21,56 +21,6 @@ main {
     padding: 20px;
 }
 
-.div-imagen-texto {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 40px;
-    gap: 40px;
-}
-
-.div-flex {
-    flex: 1;
-    max-width: 50%;
-}
-
-.texto-h1 {
-    margin: 60px;
-    font-size: 3em;
-    font-weight: 800;
-    color: #ffffff;
-    margin-bottom: 20px;
-    line-height: 1.1;
-    text-align: center;
-}
-
-.texto-h1-2 {
-    margin: 60px;
-    font-size: 3em;
-    font-weight: 800;
-    color: #ffffff;
-    margin-bottom: 20px;
-    line-height: 1.1;
-}
-
-.texto-intro {
-    font-size: 1.1em;
-    color: #ffffff;
-    margin-bottom: 30px;
-}
-
-.imagen-moto {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    object-fit: cover;
-}
 
 .img-header-mgp{
     width: 80px;
@@ -111,26 +61,65 @@ a {
     text-decoration: none;
 }
 
-.logo-motogp-body {
-    height: 80px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-
-.body-div {
-    text-align: center;
-    max-width: 1200px;
+.div-imagen-texto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 50px auto;
     padding: 0 40px;
     gap: 40px;
 }
 
-.body-div h2 {
-    color: #4e00bc;
-    margin-bottom: 20px;
+.div-imagen-texto > div:last-child {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
-.body-div-intro {
+.div-flex {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.div-flex h1 {
+    margin-top: 30px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.texto-h1 {
+    margin: 60px;
+    font-size: 3em;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.texto-intro {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.imagen-moto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    width: 70%;
+    height: auto;
+}
+
+.texto-descripcion {
     color: #ffffff;
     max-width: 450px;
     margin-left: auto;
@@ -186,28 +175,6 @@ a {
     margin-bottom: 20px;
 }
 
-.section-sin-padding {
-    margin-left: -20px;
-    margin-right: -20px;
-}
-
-.CajaRoja {
-    background-image: linear-gradient(to right, #c90000, #FB3200);
-    display: flex;
-    justify-content: center;
-    padding: 60px 60px;
-    text-align: center;
-    gap: 2%;
-}
-
-.CajaRoja h1 {
-    padding: 0 40px;
-}
-
-.CajaRoja p {
-    padding: 0 40px;
-}
-
 .footer {
     background-color: #151515;
     padding: 40px 80px;
@@ -261,6 +228,10 @@ a {
     height: 32px;
 }
 
+.social-link:hover {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(90%) saturate(6245%) hue-rotate(352deg) brightness(95%) contrast(111%);
+}
+
 .h5-footer{
     font-weight: 500;
     padding-top: 20px;
@@ -276,16 +247,6 @@ a {
 }
 
 @media (max-width: 768px) {
-
-    .div-imagen-texto {
-        flex-direction: column;
-        text-align: center;
-        margin-top: 20px; 
-    }
-
-    .div-flex {
-        max-width: 100%;
-    }
 
     .nav {
         display: flex;
@@ -308,10 +269,14 @@ a {
         text-align: center;
     }
 
-    .logo-motogp-body {
-        height: 40px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .div-imagen-texto {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px; 
+    }
+
+    .div-flex {
+        max-width: 100%;
     }
 
     .conjunto-cards {
@@ -319,16 +284,6 @@ a {
         grid-template-columns: 1fr;
         padding: 0 20px;
         gap: 20px;
-    }
-
-    .CajaRoja {
-        background-image: linear-gradient(to bottom, #c90000, #FB3200);
-        flex-direction: column;
-    }
-
-    .CajaRoja div {
-        margin-top: 20px;
-        margin-bottom: 20px;
     }
 
     .footer-content {

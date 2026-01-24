@@ -202,6 +202,10 @@ a {
     padding: 0;
 }
 
+.social-link:hover {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(90%) saturate(6245%) hue-rotate(352deg) brightness(95%) contrast(111%);
+}
+
 .h5-footer{
     font-weight: 500;
     padding-top: 20px;
