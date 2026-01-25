@@ -1,0 +1,373 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: rgba(27, 27, 27, 1);
+}
+p{
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+h2{
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+
+
+/* formulario */
+.Newsletter {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #1a1a1a; /* fondo oscuro */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    font-family: 'Barlow', sans-serif;
+    color: #ffffff; /* texto blanco */
+    border: 1px solid #4a0f0f; /* borde maroon */
+}
+
+/* Etiquetas */
+.Newsletter label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0 8px;
+  color: #ffffff;
+}
+
+/* Inputs */
+.Newsletter input[type="text"],
+.Newsletter input[type="email"],
+.Newsletter input[type="password"] {
+  width: 90%;
+  padding: 12px 14px;
+  border: 1px solid #5c1a1a; /* borde maroon */
+  border-radius: 6px;
+  font-size: 15px;
+  background: #2a2a2a; /* fondo input */
+  color: #ffffff;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+/* Efecto focus */
+.Newsletter input[type="text"]:focus,
+.Newsletter input[type="email"]:focus,
+.Newsletter input[type="password"]:focus {
+  border-color: #a83232; /* maroon más brillante */
+  box-shadow: 0 0 0 3px rgba(168,50,50,0.25);
+}
+
+/* Checkbox */
+.Newsletter input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 8px;
+  accent-color: #a83232; /* maroon */
+}
+
+/* Botones */
+.Newsletter input[type="submit"],
+.Newsletter input[type="reset"] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-right: 10px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+/* Botón principal */
+.Newsletter input[type="submit"] {
+  background: #a83232; /* maroon brillante */
+  color: #ffffff;
+}
+
+.Newsletter input[type="submit"]:hover {
+  background: #c23b3b;
+  transform: scale(1.03);
+}
+
+/* Botón secundario */
+.Newsletter input[type="reset"] {
+  background: #3a0f0f; /* maroon muy oscuro */
+  color: #ffffff;
+}
+
+.Newsletter input[type="reset"]:hover {
+  background: #5c1a1a;
+  transform: scale(1.03);
+}
+.formtitle{
+    text-align: center;
+}
+hr{
+    border: none;
+    border-top: 2px solid #a83232;
+    margin: 40px 0;
+}
+
+
+.noti {
+    display: flex;
+    background-color: #3b3b3b; /* fondo oscuro */
+    border: 2px solid #780010; /* borde maroon estilo MotoGP */
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    font-family: 'Barlow', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    gap: 20px;
+}
+
+/* Título */
+.noti h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+  -webkit-text-stroke: 0.3px #780010;
+  letter-spacing: 1px;
+}
+
+/* Imagen */
+.noti img {
+  width: 100%;
+  max-width: 199px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  padding: 10 px;
+}
+
+
+
+.Seguir_Leyendo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 1300px; /* altura para tener 4 tarjetas de tope */
+  gap: 20px;
+}
+
+.noticia {
+  background-color: #1a1a1a; /* fondo oscuro */
+  border: 2px solid #780010; /* borde maroon */
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 50px auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  font-family: 'Barlow', sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Título */
+.noticia h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #ffffff;
+  -webkit-text-stroke: 0.3px #780010;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Imagen */
+.noticia img {
+  display: block;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+
+/* Párrafo */
+.noticia p {
+  font-size: 17px;
+  color: #e0e0e0;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+.red_bull{
+    border-radius: 15px;
+}
+
+.footer {
+    background-color: #151515;
+    padding: 40px 80px;
+}
+
+.logo-mgp-footer img{
+    width: 130px;
+    height: auto;
+    padding-bottom: 23px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-columna {
+    max-width: 20%;
+}
+
+.footer h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #d40000; 
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li a {
+    font-family: 'Barlow', sans-serif;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.footer ul li a:hover {
+    color: #cc0000;
+}
+
+
+.social-link {
+    color: #ffffff;
+    box-sizing: border-box;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.social-link:hover {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(90%) saturate(6245%) hue-rotate(352deg) brightness(95%) contrast(111%);
+}
+
+.h5-footer{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+    color: #ffffff;
+
+}
+
+@media (max-width: 1024px) {
+
+    .header {
+        font-family: 'Barlow', sans-serif;
+        padding: 20px 40px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav {
+        font-family: 'Barlow', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .header {
+        font-family: 'Barlow', sans-serif;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 20px;
+        justify-content: space-between;
+    }
+
+    .nav-link {
+        padding: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo-motogp-body {
+        height: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-content {
+        font-family: 'Barlow', sans-serif;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .footer-columna {
+        max-width: 100%;
+    }
+}
+
+main {
+    font-family: 'Barlow', sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.img-header-mgp{
+    width: 80px;
+    height: auto;
+}
+
+.header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101010;
+    font-family: 'Barlow', sans-serif;
+
+    box-shadow: 0 1px 4px rgba(255, 0, 0, 0.295);
+}
+
+.nav {
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    color: #ffffff;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: #c20000;
+}
+
+.nav-active {
+    color: #bc0000;
+    border-bottom: 2px solid #bc0000;
+}
+
+a {
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+}
+
+.logo-motogp-body {
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}

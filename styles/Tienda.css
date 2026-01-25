@@ -101,3 +101,174 @@ border-radius: 15px;
     filter: brightness(1.2); /* se ilumina */
     cursor: pointer;
 }
+
+.footer {
+    background-color: #151515;
+    padding: 40px 80px;
+}
+
+.logo-mgp-footer img{
+    width: 130px;
+    height: auto;
+    padding-bottom: 23px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-columna {
+    max-width: 20%;
+}
+
+.footer h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #d40000; 
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li a {
+    font-family: 'Barlow', sans-serif;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.footer ul li a:hover {
+    color: #cc0000;
+}
+
+
+.social-link {
+    color: #ffffff;
+    box-sizing: border-box;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.social-link:hover {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(90%) saturate(6245%) hue-rotate(352deg) brightness(95%) contrast(111%);
+}
+
+.h5-footer{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+    color: #ffffff;
+
+}
+
+@media (max-width: 1024px) {
+
+    .header {
+        font-family: 'Barlow', sans-serif;
+        padding: 20px 40px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav {
+        font-family: 'Barlow', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .header {
+        font-family: 'Barlow', sans-serif;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 20px;
+        justify-content: space-between;
+    }
+
+    .nav-link {
+        padding: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo-motogp-body {
+        height: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-content {
+        font-family: 'Barlow', sans-serif;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .footer-columna {
+        max-width: 100%;
+    }
+}
+
+main {
+    font-family: 'Barlow', sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.img-header-mgp{
+    width: 80px;
+    height: auto;
+}
+
+.header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101010;
+    font-family: 'Barlow', sans-serif;
+
+    box-shadow: 0 1px 4px rgba(255, 0, 0, 0.295);
+}
+
+.nav {
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    color: #ffffff;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: #c20000;
+}
+
+.nav-active {
+    color: #bc0000;
+    border-bottom: 2px solid #bc0000;
+}
+
+a {
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+}
+
+.logo-motogp-body {
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
