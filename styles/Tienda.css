@@ -1,0 +1,103 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: rgba(27, 27, 27, 1);
+}
+p{
+    color: rgb(156, 156, 156);
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+}
+h2{
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 96px;
+    margin: 60px 0;
+}
+
+.store{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+    height: 1750px; /* 5 artículos por columna */
+    gap: 40px; /* opcional, para separar columnas */
+
+}
+
+.articulo {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: rgb(59, 58, 58);
+padding: 20px;
+width: 700px;
+margin: 40px auto;
+border-radius: 10px;
+}
+
+
+.articulo img {
+width: 150px;
+border-radius: 8px;
+}
+
+
+.info {
+flex: 1;
+margin-left: 20px;
+}
+
+
+.info h4 {
+    font-family: 'Jersey 10', sans-serif; 
+    font-size: 40px;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px;
+    -webkit-text-stroke: 0.3px #780010;
+    text-align: center;
+    letter-spacing: 2px; 
+
+}
+
+
+.price {
+    font-family: 'Jersey 10', sans-serif;
+    color: #ffff;
+    font-size: 18px;
+    margin-top: 10px;
+    -webkit-text-stroke: 0.3px #007806;
+}
+
+
+button {
+background: #000;
+color: white;
+border: 1px solid #444;
+padding: 10px 20px;
+cursor: pointer;
+border-radius: 15px;
+}
+
+.carrito {
+  width: 80px;
+  height: auto;
+  position: fixed;    
+  top: 20px;          /* distancia desde arriba */
+  right: 20px;        /* pegada a la derecha */
+  z-index: 999;       /* por si se esconde detrás de algo */
+  border: 0.1px solid;
+  border-color: #780010;
+  border-radius: 5px;
+}
+
+.carrito:hover{
+    transition: transform 0.2s ease; /* para que el transform sea mas fluido le pongo duracion */
+    transform: scale(1.1); /* crece un poco */
+    filter: brightness(1.2); /* se ilumina */
+    cursor: pointer;
+}
