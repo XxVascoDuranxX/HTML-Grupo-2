@@ -180,9 +180,9 @@
         </div>
     </div>
     <hr>
-    <h2 class="formtitle">Suscribete a nuestra newsletter para recibir notificaciones</h2>
-    <div class="Newsletter">
-        <form action="http://www.iesjacaranda.es/lmsgi/resultado.php." method="post" autocomplete="on">
+    <h2 class="formtitle" id="titulo3">Suscribete a nuestra newsletter para recibir notificaciones</h2>
+    <div class="Newsletter" id="newsletter">
+        <form action="http://www.iesjacaranda.es/lmsgi/resultado.php." method="post" autocomplete="on" id="f1" onsubmit="return comprobarClave()">
             <label for="name">Nombre</label>
             <br>
             <input type="text" name="nombre_user" class="name" required autofocus>
@@ -211,7 +211,7 @@
             <input type="checkbox" name="notis" class="notifications">
             <br>
             <input type="reset" value="Cancelar">
-            <input type="submit" value="Guardar y Continuar">
+            <input type="submit" value="Guardar y Continuar" id="fin_formulario">
         </form>
     </div>
     <footer class="footer">
