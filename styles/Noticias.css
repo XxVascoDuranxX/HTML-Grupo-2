@@ -370,4 +370,23 @@ a {
     height: 80px;
     margin-top: 20px;
     margin-bottom: 50px;
+
+}
+
+.noticia {
+  display: none;
+}
+
+.noticia.activa {
+  display: block;
+}
+
+.noti {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.noti.activa {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  border: 2px solid #780010;
 }
