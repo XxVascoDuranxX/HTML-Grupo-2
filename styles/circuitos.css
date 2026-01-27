@@ -63,17 +63,19 @@ a {
 
 .div-imagen-texto {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    margin: 50px auto;
+    max-width: 1200px;
+    margin: 40px auto;
     padding: 0 40px;
-    gap: 40px;
 }
 
-.div-imagen-texto > div:last-child {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+.imagen-arriba {
+    width: 80%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 40px;
 }
 
 .div-flex {
@@ -103,20 +105,11 @@ a {
 .texto-intro {
     font-size: 1.1em;
     color: #ffffff;
+    margin-top: 30px;
     margin-bottom: 30px;
-}
+    text-align: center;
+    margin: 0 11%;
 
-.imagen-moto {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    object-fit: cover;
-    width: 70%;
-    height: auto;
 }
 
 .texto-descripcion {
@@ -173,7 +166,27 @@ a {
     font-size: 1em;
     color: #ffffff;
     margin-bottom: 20px;
+    line-height: 40px;
 }
+
+.div-rojo-texto {
+    background-color: #c20000;
+    text-align: center;
+    padding: 20px 60px;
+    margin: 0 20% 40px;
+    border-radius: 10px;
+
+}
+
+.icono-svg {
+    height: 1.1em; 
+    width: auto;
+    vertical-align: middle;
+    margin-bottom: 0.15em;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
 
 .footer {
     background-color: #151515;
@@ -184,53 +197,6 @@ a {
     width: 130px;
     height: auto;
     padding-bottom: 23px;
-}
-
-.seccion-tabla {
-    max-width: 1200px;
-    margin: 80px auto;
-    padding: 0 40px;
-}
-
-.seccion-tabla h2 {
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.contenedor-tabla {
-    overflow-x: auto;
-    border-radius: 12px;
-    border: 1px solid #c20000;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #232323;
-    color: #ffffff;
-}
-
-th, td {
-    padding: 18px 20px;
-    text-align: center;
-    border-bottom: 1px solid #3a3a3a;
-}
-
-th {
-    background-color: #101010;
-    color: #bc0000;
-    font-weight: 700;
-}
-
-td:first-child {
-    text-align: left;
-    font-weight: 700;
-    background-color: #151515;
-    color: #ffffff;
-}
-
-tr:nth-child(even) {
-    background-color: #1a1a1a;
 }
 
 .footer-content {
@@ -294,25 +260,6 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 768px) {
-
-    .contenedor-tabla {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    table {
-        min-width: 600px;
-    }
-
-    th, td {
-        padding: 10px 12px;
-        font-size: 0.85em;
-        white-space: nowrap;
-    }
-
-    .seccion-tabla {
-        padding: 0 10px;
-    }
 
     .nav {
         display: flex;
