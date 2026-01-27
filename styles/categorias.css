@@ -159,7 +159,7 @@ a {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 .card-titulo {
@@ -167,6 +167,15 @@ a {
     font-weight: 700;
     color: #c20000;
     margin-bottom: 10px;
+    transition: color 0.3s;
+    text-shadow: 
+    1px 1px 0px #000000,
+    2px 2px 0px #000000,
+    3px 3px 0px #000000;
+}
+
+.card-titulo:hover{
+    color: #2900ae;
 }
 
 .card-texto {
@@ -231,6 +240,15 @@ td:first-child {
 
 tr:nth-child(even) {
     background-color: #1a1a1a;
+}
+
+.icono-svg {
+    height: 1.1em; 
+    width: auto;
+    vertical-align: middle;
+    margin-bottom: 0.15em;
+    margin-right: 8px;
+    margin-left: 8px;
 }
 
 .footer-content {
