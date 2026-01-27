@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const boton = document.getElementById("btn-subir");
 
     window.addEventListener("scroll", () => {
-        if (window.scrollY > 300) {
+        if (window.scrollY > 800) {
             boton.style.display = "flex";
         } else {
             boton.style.display = "none";
