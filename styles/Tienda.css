@@ -87,12 +87,13 @@ border-radius: 15px;
   width: 80px;
   height: auto;
   position: fixed;    
-  top: 20px;          /* distancia desde arriba */
+  top: 100px;          /* distancia desde arriba */
   right: 20px;        /* pegada a la derecha */
   z-index: 999;       /* por si se esconde detrás de algo */
   border: 0.1px solid;
   border-color: #780010;
   border-radius: 5px;
+  pointer-events: auto;
 }
 
 .carrito:hover{
@@ -103,6 +104,7 @@ border-radius: 15px;
 }
 
 .footer {
+    width: 100%;
     background-color: #151515;
     padding: 40px 80px;
 }
@@ -116,7 +118,7 @@ border-radius: 15px;
 .footer-content {
     display: flex;
     justify-content: space-between;
-    max-width: 1400px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -125,6 +127,7 @@ border-radius: 15px;
 }
 
 .footer h4 {
+    font-family: 'Barlow', sans-serif;
     font-size: 1.1em;
     font-weight: 600;
     color: #d40000; 
@@ -177,6 +180,16 @@ border-radius: 15px;
 }
 
 @media (max-width: 768px) {
+
+    .store{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: wrap;
+        height: 100%; /* ajusta la altura automáticamente */
+        gap: 40px; /* opcional, para separar columnas */
+
+    }
 
     .nav {
         font-family: 'Barlow', sans-serif;
@@ -237,7 +250,7 @@ main {
     align-items: center;
     background-color: #101010;
     font-family: 'Barlow', sans-serif;
-
+    width: 100%;
     box-shadow: 0 1px 4px rgba(255, 0, 0, 0.295);
 }
 
