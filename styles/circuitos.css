@@ -10,14 +10,14 @@
 
 body {
     font-family: 'Barlow', sans-serif;
-    background-color: #171717;
+    background-color: #080808;
     color: #ffffff;
     line-height: 1.6;
 }
 
 body {
     font-family: 'Barlow', sans-serif;
-    background-color: #171717;
+    background-color: #080808;
     background-image: url("../images/fondo.png"); 
     background-size: 500px; 
     background-repeat: repeat; 
@@ -42,7 +42,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #101010;
+    background-color: #080808;
 
     box-shadow: 0 1px 4px rgba(255, 0, 0, 0.295);
 }
@@ -146,7 +146,7 @@ a {
 
 .card {
     flex: 1;
-    background-color: #121212;
+    background-color: #0b0b0b;
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -178,7 +178,7 @@ a {
 }
 
 .card-titulo:hover{
-    color: #2900ae;
+    color: #f46600;
 }
 
 .card-texto {
@@ -207,7 +207,7 @@ a {
 }
 
 .footer {
-    background-color: #151515;
+    background-color: #080808;
     padding: 40px 80px;
 }
 
@@ -332,7 +332,12 @@ a {
     .div-imagen-texto {
         flex-direction: column;
         text-align: center;
-        margin-top: 20px; 
+    /*    margin-top: 20px; */
+        margin: 20px -10%;
+    }
+
+    .texto-centrado-grande{
+        padding: 0 40px;
     }
 
     .div-flex {
@@ -344,6 +349,11 @@ a {
         grid-template-columns: 1fr;
         padding: 0 20px;
         gap: 20px;
+    }
+
+    .div-rojo-texto {
+    padding: 20px 20px;
+    margin: 0 5% 40px;
     }
 
     .footer-content {

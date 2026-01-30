@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Barlow', sans-serif;
-    background-color: #171717;
+    background-color: #080808;
     background-image: url("../images/fondo.png"); 
     background-size: 500px; 
     background-repeat: repeat; 
@@ -42,9 +42,9 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #101010;
+    background-color: #080808;
 
-    box-shadow: 0 1px 4px rgba(255, 0, 0, 0.295);
+    box-shadow: 0 1px 4px rgba(255, 0, 0, 0.3);
 }
 
 .nav {
@@ -127,7 +127,7 @@ a {
     object-fit: cover;
     width: 70%;
     height: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
 
 .texto-descripcion {
@@ -154,7 +154,7 @@ a {
 
 .card {
     flex: 1;
-    background-color: #121212;
+    background-color: #0b0b0b;
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -170,7 +170,7 @@ a {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
 }
 
 .card-titulo {
@@ -186,7 +186,7 @@ a {
 }
 
 .card-titulo:hover{
-    color: #2900ae;
+    color: #f46600;
 }
 
 .card-texto {
@@ -196,7 +196,7 @@ a {
 }
 
 .footer {
-    background-color: #151515;
+    background-color: #080808;
     padding: 40px 80px;
 }
 
@@ -226,7 +226,7 @@ a {
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #232323;
+    background-color: #1b1b1b;
     color: #ffffff;
 }
 
@@ -237,7 +237,7 @@ th, td {
 }
 
 th {
-    background-color: #101010;
+    background-color: #0b0b0b;
     color: #bc0000;
     font-weight: 700;
 }
@@ -245,12 +245,12 @@ th {
 td:first-child {
     text-align: left;
     font-weight: 700;
-    background-color: #151515;
+    background-color: #0b0b0b;
     color: #ffffff;
 }
 
 tr:nth-child(even) {
-    background-color: #1a1a1a;
+    background-color: #131313;
 }
 
 .icono-svg {

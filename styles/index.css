@@ -34,7 +34,8 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #101010;
+    background-color: #080808;
+    /* background-color: rgb(8, 8, 8, 0.9); */
 
     box-shadow: 0 1px 4px rgba(255, 0, 0, 0.295);
 }
@@ -106,7 +107,8 @@ a {
 
 .card {
     flex: 1;
-    background-color: #121212;
+    background-color: #0b0b0b;
+    /* background-color: rgb(11, 11, 11, 0.8); */
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -118,7 +120,7 @@ a {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
 }
 
 .card-titulo {
@@ -134,7 +136,7 @@ a {
 }
 
 .card-titulo:hover{
-    color: #2900ae;
+    color: #f46600;
 }
 
 .card-texto {
@@ -196,7 +198,8 @@ a {
 }
 
 .footer {
-    background-color: #151515;
+    background-color: #080808;
+    /* background-color: rgb(8, 8, 8, 0.9); */
     padding: 40px 80px;
 }
 
