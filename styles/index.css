@@ -160,8 +160,9 @@ a {
     margin-bottom: -20px;
 }
 
-.CajaRoja h1 {
-    padding: 0 40px;
+.CajaRoja-p {
+    font-weight: 700;
+    font-size: xx-large;
 }
 
 .CajaRoja p {
