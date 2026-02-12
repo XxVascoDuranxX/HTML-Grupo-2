@@ -5,15 +5,13 @@
     padding: 0;
 }
 
-html, body {
-    overflow-x: hidden; /* Evita scroll horizontal */
-}
 
 body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     background-color: #1b1b1b;
+    background-image: url("../images/fondo.png"); 
     font-family: 'Barlow', sans-serif;
 }
 
@@ -274,3 +272,4 @@ h2 {
         max-width: 400px;
     }
 }
+
