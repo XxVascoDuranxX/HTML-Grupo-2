@@ -13,9 +13,6 @@ body {
     min-height: 100vh;
     display: flex;
     background-image: url("../images/fondo.png");
-    background-size: 500px; 
-    background-repeat: repeat; 
-    background-attachment: scroll;
     flex-direction: column;
 }
 
@@ -249,4 +246,5 @@ button:hover {
         flex-direction: column;
     }
 }
+
 
