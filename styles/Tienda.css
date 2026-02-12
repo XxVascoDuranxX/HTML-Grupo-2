@@ -1,269 +1,49 @@
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    background-color: rgba(27, 27, 27, 1);
-}
-p{
-    color: rgb(156, 156, 156);
-    font-family: 'Barlow', sans-serif;
-    text-align: center;
-}
-h2{
-    color: white;
-    font-family: 'Barlow', sans-serif;
-    text-align: center;
-    font-weight: 700;
-    font-size: 96px;
-    margin: 60px 0;
-}
-
-.store{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    flex-wrap: wrap;
-    height: 1750px; /* 5 artículos por columna */
-    gap: 40px; /* opcional, para separar columnas */
-
-}
-
-.articulo {
-display: flex;
-align-items: center;
-justify-content: space-between;
-background: rgb(59, 58, 58);
-padding: 20px;
-width: 700px;
-margin: 40px auto;
-border-radius: 10px;
-}
-
-
-.articulo img {
-width: 150px;
-border-radius: 8px;
-}
-
-
-.info {
-flex: 1;
-margin-left: 20px;
-}
-
-
-.info h4 {
-    font-family: 'Jersey 10', sans-serif; 
-    font-size: 40px;
-    color: #ffffff;
-    margin: 0;
-    padding: 10px;
-    -webkit-text-stroke: 0.3px #780010;
-    text-align: center;
-    letter-spacing: 2px; 
-
-}
-
-
-.price {
-    font-family: 'Jersey 10', sans-serif;
-    color: #ffff;
-    font-size: 18px;
-    margin-top: 10px;
-    -webkit-text-stroke: 0.3px #007806;
-}
-
-
-button {
-background: #000;
-color: white;
-border: 1px solid #444;
-padding: 10px 20px;
-cursor: pointer;
-border-radius: 15px;
-}
-
-.carrito {
-  width: 80px;
-  height: auto;
-  position: fixed;    
-  top: 100px;          /* distancia desde arriba */
-  right: 20px;        /* pegada a la derecha */
-  z-index: 999;       /* por si se esconde detrás de algo */
-  border: 0.1px solid;
-  border-color: #780010;
-  border-radius: 5px;
-  pointer-events: auto;
-}
-
-.carrito:hover{
-    transition: transform 0.2s ease; /* para que el transform sea mas fluido le pongo duracion */
-    transform: scale(1.1); /* crece un poco */
-    filter: brightness(1.2); /* se ilumina */
-    cursor: pointer;
-}
-
-.footer {
-    width: 100%;
-    background-color: #151515;
-    padding: 40px 80px;
-}
-
-.logo-mgp-footer img{
-    width: 130px;
-    height: auto;
-    padding-bottom: 23px;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.footer-columna {
-    max-width: 20%;
-}
-
-.footer h4 {
-    font-family: 'Barlow', sans-serif;
-    font-size: 1.1em;
-    font-weight: 600;
-    color: #d40000; 
-    margin-bottom: 15px;
-}
-
-.footer ul {
-    list-style: none;
-}
-
-.footer ul li a {
-    font-family: 'Barlow', sans-serif;
-    color: #ffffff;
-    display: block;
-    margin-bottom: 8px;
-    font-size: 0.95em;
-}
-
-.footer ul li a:hover {
-    color: #cc0000;
-}
-
-
-.social-link {
-    color: #ffffff;
+* {
     box-sizing: border-box;
-    margin-right: 10px;
+    margin: 0;
     padding: 0;
 }
 
-.social-link:hover {
-    filter: brightness(0) saturate(100%) invert(12%) sepia(90%) saturate(6245%) hue-rotate(352deg) brightness(95%) contrast(111%);
-}
 
-.h5-footer{
+
+body {
     font-family: 'Barlow', sans-serif;
-    font-weight: 500;
-    padding-top: 20px;
-    color: #ffffff;
-
+    background-color: #1b1b1b;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    background-image: url("../images/fondo.png");
+    background-size: 500px; 
+    background-repeat: repeat; 
+    background-attachment: scroll;
+    flex-direction: column;
 }
 
-@media (max-width: 1024px) {
-
-    .header {
-        font-family: 'Barlow', sans-serif;
-        padding: 20px 40px;
-        justify-content: space-between;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .store{
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        flex-wrap: wrap;
-        height: 100%; /* ajusta la altura automáticamente */
-        gap: 40px; /* opcional, para separar columnas */
-
-    }
-
-    .nav {
-        font-family: 'Barlow', sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 10px 0;
-    }
-
-    .header {
-        font-family: 'Barlow', sans-serif;
-        display: flex;
-        flex-direction: column;
-        padding: 15px 20px;
-        justify-content: space-between;
-    }
-
-    .nav-link {
-        padding: 5px 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .logo-motogp-body {
-        height: 40px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .footer-content {
-        font-family: 'Barlow', sans-serif;
-        flex-direction: column;
-        gap: 30px;
-        padding: 0 20px;
-    }
-
-    .footer-columna {
-        max-width: 100%;
-    }
-}
-
-main {
-    font-family: 'Barlow', sans-serif;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.img-header-mgp{
-    width: 80px;
-    height: auto;
-}
+/* ================= HEADER ================= */
 
 .header {
+    width: 100%;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #101010;
-    font-family: 'Barlow', sans-serif;
-    width: 100%;
-    box-shadow: 0 1px 4px rgba(255, 0, 0, 0.295);
+    box-shadow: 0 1px 4px rgba(255, 0, 0, 0.3);
+}
+
+.img-header-mgp {
+    width: 80px;
+    height: auto;
 }
 
 .nav {
-    font-family: 'Barlow', sans-serif;
     display: flex;
     gap: 40px;
 }
 
 .nav-link {
-    color: #ffffff;
-    padding: 8px 0;
-    text-align: center;
+    color: white;
+    text-decoration: none;
 }
 
 .nav-link:hover {
@@ -275,13 +55,198 @@ main {
     border-bottom: 2px solid #bc0000;
 }
 
-a {
-    font-family: 'Barlow', sans-serif;
+/* ================= TITULO ================= */
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+    margin: 60px 0 20px 0;
+}
+
+p {
+    text-align: center;
+    color: rgb(156, 156, 156);
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+}
+
+/* ================= STORE ================= */
+
+.store {
+    max-width: 1400px;
+    margin: 0 auto 80px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.articulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(59, 58, 58);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.articulo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
+}
+
+.articulo img {
+    width: 150px;
+    border-radius: 8px;
+}
+
+.info {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.info h4 {
+    font-family: 'Jersey 10', sans-serif; 
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    -webkit-text-stroke: 0.3px #780010;
+    text-align: center;
+    letter-spacing: 2px; 
+}
+
+.price {
+    font-family: 'Jersey 10', sans-serif;
+    font-size: 18px;
+    -webkit-text-stroke: 0.3px #007806;
+}
+
+/* ================= BOTONES ================= */
+
+button {
+    background: #000;
+    color: white;
+    border: 1px solid #444;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #780010;
+    border-color: #780010;
+}
+
+/* ================= CARRITO ================= */
+
+.carrito {
+    width: 80px;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 999;
+    border: 1px solid #780010;
+    border-radius: 5px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.carrito:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    width: 100%;
+    background-color: #151515;
+    padding: 40px 20px;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    width: 130px;
+    margin-bottom: 20px;
+}
+
+.footer-columna h4 {
+    color: #d40000;
+    margin-bottom: 15px;
+}
+
+.footer-columna ul {
+    list-style: none;
+}
+
+.footer-columna ul li {
+    margin-bottom: 8px;
+}
+
+.footer-columna a {
+    color: white;
     text-decoration: none;
 }
 
-.logo-motogp-body {
-    height: 80px;
-    margin-top: 20px;
-    margin-bottom: 50px;
+.footer-columna a:hover {
+    color: #cc0000;
 }
+
+.social-link img {
+    width: 32px;
+    margin-right: 10px;
+}
+
+.h5-footer {
+    margin-top: 20px;
+    font-size: 0.85em;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .store {
+        grid-template-columns: 1fr;
+    }
+
+    .articulo {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .info {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
